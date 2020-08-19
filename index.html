@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ドットインストール</title>
+</head>
+<body>
+  <label>名前 <input type="text"></label> 
+  <label for="name">名前</label>
+  <input type="text" id="name">
+
+  <!-- <label for="color">好きな色</label>
+  <select id="color" size="4" multiple>
+    <select id="color">
+    <option>色1</option>
+    <option>色2</option>
+    <option>色3</option>
+    <option selected>色4</option>
+    <option>色5</option>
+  </select> -->
+
+  <fieldset>
+    <legend>お使いのスマホ(複数選択可)</legend>
+    <label><input type="checkbox"> iPhone</label>
+    <label><input type="checkbox" checked> Android</label>
+    <label> <input type="checkbox"> その他</label>
+
+  </fieldset>
+  <fieldset>
+    <legend>一番好きなスマホ</legend>
+    <label><input type="radio" name="phone"> iPhone</label>
+    <label><input type="radio" checked name="phone"> Android</label>
+    <label> <input type="radio"name="phone"> その他</label> 
+
+  </fieldset>
+
+  <p><input type="color"></p>
+  <p><input type="date"></p>
+  <p><input type="number"></p>
+  <p><input type="range"></p>
+
+  <input type="button" value="OK">
+  <button>OK</button>
+
+  <input type="button" value="OK" disabled>
+  <button disabled>OK</button>
+
+  <form action="process.php" method="post">
+
+    <label>担当者名<input type="text" name="username"></label>
+    <label>タスク<input type="text" name="task"></label>
+    <button>追加</button>
+
+  </form>
+</body>
+</html> 
